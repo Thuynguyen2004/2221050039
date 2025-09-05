@@ -15,7 +15,7 @@ h2 {
     /*4 giá trị: trên --> phải --> dưới --> trái*/
     /*margin: 50px 10px 100px 30px*/
     width: 50%;
-    /*auto cần khối ra giữa */
+    /*auto căn khối ra giữa */
     margin: 50px auto;
     padding: 100px;
 
