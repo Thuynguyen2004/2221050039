@@ -1,31 +1,27 @@
+.right {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+}
 body{
     margin: 0px;
 }
 nav{
     background-color: #0c4ca3;
+    display: flex; /*sắp xếp các khối linh hoạt*/
+    justify-content: center; /*căn giữa theo chiều ngang, phải đi cùng display: flex*/
+    list-style: none; /*bỏ dấu đầu dòng maker*/
+    /*gap: 20px; /*khoảng cách giữa các hàng, cột trong flexbox*/
     /*padding: 10px;*/
 
 }
-ul{
-    display: flex; /*linh hoạt*/
-    justify-content: center; /*căn giữa theo chiều ngang, phải đi cùng thẻ này display: flex*/
-    list-style: none; /*bỏ dấu đầu dòng marker*/
-    /*gap: 20px; /*khoảng cách giữa các hàng, cột trong flexbox */
-
-}
-li {
-    padding: 10px
-}
-.border {
-    border-right: 1px solid grey;
-}
-
-
-.danhmuch-lienket{
+nav a{
+    padding: 15px;  
+    border-right: 1px solid gray;
     color: white;
-    text-decoration: none; /*xóa bỏ các đường trang trí: gạch chân */
+    text-decoration-line: none; /*xóa bỏ các đường trang trí: vd đường gạch chân*/
     font-family: Roboto, Arial, Tahoma;
-
 }
 .banner-qc {
     display: flex;
@@ -36,16 +32,108 @@ li {
     justify-content: center;
 }
 header{
-    border-bottom: 15px solid #f1f1f2;
+    border-bottom:20px solid #f1f1f2 ;
 }
-.news{
-    margin: 50px auto;
+
+.more{
+    display:flex;
+    justify-content:space-between;
+    margin: 0px 150px;
+    border-bottom: 1px solid gray;
+    
+}
+span{
+    padding: 10px 0 0;
+    color:gray;
+    float:right;
+}
+.new{
     display: flex;
     justify-content: center;
+    margin: 15px 80px;
 }
 .nd{
-    background-color: bisque;
-    width: 20%;
-    height: 200px;
-    margin: 0px 5px;
+     margin: 0px 15px;
+    width:20%;
 }
+.f{
+    padding: 0px;
+}
+.nd li{
+    font-size:14px;
+    margin:10px;
+}
+li::marker{
+    color:blue; 
+    font-size: 15px;
+}
+.lienketweb{
+    display:flex;
+    justify-content: center;
+    margin: 0 auto; 
+    height: 60;
+    padding: 0;
+    margin-bottom: 20px;;
+}
+.tieubieu{
+    display:flex;
+    justify-content: center;
+    
+}
+.anhweb img{
+    width:200px;
+    height:60px;
+}
+.dsweb{
+    border: 1px solid #d0d6d1;
+    height:60px;
+}
+.oplienket{
+    font-size: 12px;
+    padding: 3px;
+}
+.title{
+    font-size: 12px;
+}
+.thongbao{
+    background-color: #f5f2f3;
+}
+.bangtb{
+    margin: 20px 150px;
+}
+.tuyensinh{
+    display: flex;
+    justify-content: center;
+    margin: 10px 150px;
+    gap: 20px;
+}
+.hdsv{
+    display: flex;
+    justify-content: center;
+    margin: 15px 150px;
+    gap: 30px;
+}
+.doitac{
+    display:flex;
+    justify-content: center;
+    margin: 15px 240px;
+    gap:5px;
+}
+.media{
+    background-color: grey;
+    color: white;
+    margin: 20px 150px;
+}
+.media td{
+    border-style:dashed;
+}
+li{
+    list-style-type: square;
+}
+
+
+
+
+     
+
+

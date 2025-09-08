@@ -1,0 +1,73 @@
+.right {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+}
+body{
+    margin: 0px;
+}
+nav{
+    background-color: #0c4ca3;
+    display: flex; /*sắp xếp các khối linh hoạt*/
+    justify-content: center; /*căn giữa theo chiều ngang, phải đi cùng display: flex*/
+    list-style: none; /*bỏ dấu đầu dòng maker*/
+    /*gap: 20px; /*khoảng cách giữa các hàng, cột trong flexbox*/
+    /*padding: 10px;*/
+
+}
+nav a{
+    padding: 15px;  
+    border-right: 1px solid gray;
+    color: white;
+    text-decoration-line: none; /*xóa bỏ các đường trang trí: vd đường gạch chân*/
+    font-family: Roboto, Arial, Tahoma;
+}
+.banner-qc {
+    display: flex;
+    justify-content: center;
+}
+.qc {
+     display: flex;
+    justify-content: center;
+}
+header{
+    border-bottom:20px solid #f1f1f2 ;
+}
+
+.more{
+    display:flex;
+    justify-content:space-between;
+    margin: 0px 150px;
+    border-bottom: 1px solid gray;
+    
+}
+span{
+    padding: 10px 0 0;
+    color:gray;
+    float:right;
+}
+.new{
+    display: flex;
+    justify-content: center;
+    margin: 15px 80px;
+}
+.nd{
+     margin: 0px 15px;
+    width:20%;
+}
+.f{
+    padding: 0px;
+}
+.nd li{
+    font-size:14px;
+    margin:10px;
+}
+.thongbao{
+    background-color: white;
+
+}
+.bangtb{
+    margin: 20px 150px;
+
+}
