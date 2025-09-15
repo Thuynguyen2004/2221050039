@@ -1,0 +1,20 @@
+form{
+    background-color:aquamarine;
+    border-radius: 15px;
+    margin:auto;
+    width:40%;
+    height:500px;
+}
+.noidungchinh{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.anh{
+    margin-top: 20px;
+
+}
+.thongtindangnhap{
+    margin-top:20px;
+
+}

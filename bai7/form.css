@@ -1,0 +1,31 @@
+form{
+   margin: auto;
+     
+
+    
+}
+body{
+    margin: 20px;
+    background-color:aqua;
+  
+}
+header{
+    display: flex;
+    width:100%;
+
+}
+span{
+    color:gray;
+}
+.in4{
+
+}
+main{
+    width:40%;
+    background-color:beige;
+    border-radius: 30px;
+    margin: auto;
+}
+p{
+    
+}
