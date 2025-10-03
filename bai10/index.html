@@ -80,27 +80,29 @@
         //5-->7:C
         //4-->5:D
         // nhỏ hơn 4 F
-         let diema = 8;
-        let diemb = 10;
+        <!-- let diema = 8;
+        let diemb = 100;  -->
         let diemc = 9;
         tong = diema*0.3 + diemb*0.6 + diemc*0.1;
-        document.writeln(tong);
-        if(tong>=8 && tong<=10){
-            document.writeln('A');
-        }
-        else if(tong>=7 && tong<8){
-            document.writeln('B');
-        }
-        else if(tong>=5 && tong<7){
-            document.writeln('C');
-        }
-        else if(tong>=4 && tong<5){
-            document.writeln('D');
-        }
-        else {
-            document.writeln('F');
-        }
-    
+        document.writeln("Tổng: " + tong + "<br>");
+
+       if (diema < 0 || diema > 10 || diemb < 0 || diemb > 10 || diemc < 0 || diemc > 10) {
+    document.writeln("Điểm không hợp lệ");
+} else if (tong>=8 && tong<=10){
+        document.writeln('A');
+    }
+    else if(tong>=7 && tong<8){
+        document.writeln('B');
+    }
+    else if(tong>=5 && tong<7){
+        document.writeln('C');
+    }
+    else if(tong>=4 && tong<5){
+        document.writeln('D');
+    }
+    else if(tong>=0 && tong<4){
+        document.writeln('F');
+    }
 
     </script>
 </body>
