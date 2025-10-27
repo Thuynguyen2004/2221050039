@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tính tổng</h1>
+    <div>
+        <p>Nhập số thứ nhất:</p>
+        <input type="number" id="soThuNhat">
+    </div>
+     <div>
+        <p>Nhập số thứ hai:</p>
+        <input type="number" id="soThuHai">
+    </div>
+     <div>
+        <button onclick="tinhTong()">Tính tổng</button>
+    </div>
+    <div>
+        Kết quả: <input type="number" id="ketQua" class="ket-qua">
+    </div>
+ <script>
+ //Tạo prompt nhập tên in ra màn hình
+ //let ten = prompt('Nhập họ và tên', "VD: ABC");
+ //document.writeln("Xin chào" + ten);
+ //Tạo 1 hàm không tham số khi gọi đến hàm ấy in ra đc người nhập vào prompt
+ //function hello(){
+    //document.writeln(ten);
+ //}
+ //hello()
+ //Tạo 1 hàm có tham số nhập vào số bất kỳ
+ //let xinchao = parseInt(prompt('Nhap vao 1 sô bat kì'))
+ //function coThamSo(soLan){
+   // for(let i =0; i<xinchao; i++){
+        //document.writeln("Xin chào"+ i +" <br>");
+    ////}
+ //}
+ //coThamSo(soLan);
+ function tinhTong(){
+    let soThuNhat = parseFloat(document.getElementById('soThuNhat').value);
+    let soThuHai = parseFloat(document.getElementById('soThuHai').value);
+    let canhBao = "";
+    if(!soThuNhat){
+        canhBao += "Vui lòng nhập số thứ nhất";
+    }
+    if(!soThuHai){
+        canhBao += "Vui lòng nhập số thứ hai";
+    }
+    if(canhBao){
+        alert(canhBao);
+    }
+    let tong = soThuNhat + soThuHai;
+    //document.writeln(tong);
+    document.getElementById('ketQua').value=tong
+}
+
+    </script>
+   
+</body>
+</html>

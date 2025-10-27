@@ -67,24 +67,64 @@
        // code logic
        //}
 
+
+        // <div class="chu-thich-anh">
+          //  trời nắng
+       // </div>
+       // <div>
+         //   <img class="anh" src="GCN0601-475.jpg" width="200px" height="150px" >
+        //</div>
+       // <div>
+       // <button onclick="doiCheDo()">Đổi chế độ</button>
+       // </div>
+       // <script>
+            //var sang = true;
+          //  function doiCheDo(){
+               // if(sang){
+                   // document.getElementsByClassName("chu-thich-anh")[0].innerHTML="trời tối";
+                   // document.getElementsByClassName("anh")[0].src="GCN0601-475.jpg";
+                   // document.getElementsByTagName("body")[0].style="background-color: black";
+                   // document.getElementsByTagName("chu-thich-anh")[0].style="color: green";
+                   // sang=false;
+               // }
+               // else{
+                   // document.getElementsByClassName("chu-thich-anh")[0].innerHTML="trời sáng";
+                   // document.getElementsByClassName("anh")[0].src="7c70dfba-d906-43cb-8d5b-7621cd7d73da.jpg";
+                  //  document.getElementsByTagName("body")[0].style="background-color: white";
+                 //   document.getElementsByTagName("chu-thich-anh")[0].style="color: red";
+                 //   sang=true;
+               // }
+           // }
+        //<script>//
+
+        
+
        function sayHello(){
         document.writeln("Xin chào");
        }
        sayHello();
 
-       let ten = prompt('Nhập họ tên', "Ví dụ:ABC");
-       let namSing = prompt('Nhập năm sinh', "Ví dụ: 1997");
+       //let ten = prompt('Nhập họ tên', "Ví dụ:ABC");
+      // let namSinh = prompt('Nhập năm sinh', "Ví dụ: 1997");
 
-       function sayHello2(ten, namSinh){
-         document.writeln("Xin chào" +ten+" "+namSinh);
-       }
-       sayHello2("Thúy", "2004");
+      // function sayHello2(ten, namSinh){
+       //  document.writeln("Xin chào" +ten+" "+namSinh);
+      // }
+      // sayHello2("Thúy", "2004");
+        let ten = prompt("Nhập họ và tên", "Ví dụ: ABC");
+        let namSinh = prompt("Nhập năm sinh", "Ví dụ: 2000");
+        let tenv = prompt("Nhập họ và tên vợ", "Ví dụ: ABC");
+        let namSinhv = prompt("Nhập năm sinh vợ", "Ví dụ: 2000");
+        let tenc = prompt("Nhập họ và tên con", "Ví dụ: ABC");
+        let namSinhc = prompt("Nhập năm sinh cón", "Ví dụ: 2000");     
+        function sayHello3(ten, namSinh, tenv, namSinhv, tenc, namSinhc){
+            document.writeln("Xin chào "+ten+" sinh năm "+namSinh);
+            document.writeln("<br>"+ "Vợ là "+tenv+" sinh năm "+namSinhv);
+            document.writeln("<br>"+ "Con là "+tenc+" sinh năm "+namSinhc);
+        }
+        sayHello3(ten, namSinh, tenv, namSinhv, tenc, namSinhc);
 
-
-
-     
-
-
-    </script> 
+        
+    </script>
 </body>
 </html>
