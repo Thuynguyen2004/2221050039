@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!--  Tính chỉ số BMI
+Công thức: Cân năng / (Chiều cao * Chiều cao)
+Cân nặng: Kg
+Chiều cao: m
+Tạo input cho phép nhập vào chiều cao cân nặng
+Tạo nút bấm kiểm tra chỉ số BMI
+Trường hợp 1: Người dùng không nhập hoặc nhập sai thông tin phải cảnh báo
+Trường hợp 2: Nhập đúng, hiển thị được chỉ số BMI và hình ảnh tương ứng -->
+<div class="box">
+        <div class="box-left">
+             <h2>Nhập chỉ số của bạn</h2>
+             <p>Cân nặng</p>
+             <input type="number" name="canNang" id="canNang" placeholder="Cân nặng">
+             <p>Chiều cao</p>
+             <input type="number" name="chieuCao" id="chieuCao" placeholder="Chiều cao">
+             <p id="thongBao"></p>
+             <button onclick="kiemtraBMI()" > Kiểm tra</button>
+             <p id="ketQua"></p>
+        </div>
+        <div class="box-right">
+            <img src="" alt="anhBMI" id="anhBMI">
+        </div>
+    </div>
+    <script>
+        function kiemTraBMI(){
+             let canNang = document.getElementById('chieucao').value;
+             let chieuCao = document.getElementById('canNang').value;
+             let thongBao = document.getElementById('thongBao');
+             let ketQua = document.getElementById('ketQua');
+             let anh = document.getElementById('anhBMI')
+        }
+        if (chieuCao<=0 && canNang<=0){
+                document.getElementsByTagName('p')[2].innerHTML='Kiểm tra lại cân nặng, chiều cao'
+              
+            }
+            if (chieuCao<=0){
+                document.getElementsByTagName('p')[2].innerHTML='Kiểm tra lại chiều cao'
+                
+            
+            }
+            if (canNang<=0){
+                document.getElementsByTagName('p')[2].innerHTML='Kiểm tra lại cân nặng'
+                
+           
+            } 
+            let BMI=canNang/(chieuCao*chieuCao)
+            if (BMI <= 18.5) {
+                document.getElementsByTagName('p')[3].innerHTML ="Chỉ số BMI:" + BMI;
+                document.getElementsByTagName('img')[0].src="bai13/z7173870276393_8d9e4cda002d0ee4bbeda73ed2147a03.jpg";
+
+            }
+    else if (BMI >=18.5 && BMI <= 24.9) {
+                document.getElementsByTagName('p')[3].innerHTML='Chỉ số BMI:'+ BMI
+                document.getElementsByTagName('img')[0].src=''
+             
+            }
+            else if (BMI >=25 && BMI <= 29.9) {
+                document.getElementsByTagName('p')[3].innerHTML='Chỉ số BMI:'+ BMI
+                document.getElementsByTagName('img')[0].src=''
+             
+            }
+            else if (BMI >= 30 && BMI <= 39.9) {
+                document.getElementsByTagName('p')[3].innerHTML='Chỉ số BMI:'+ BMI
+                document.getElementsByTagName('img')[0].src=''
+              
+            }
+            else {
+            document.getElementsByTagName('p')[3].innerHTML='Chỉ số BMI:'+ BMI
+            document.getElementsByTagName('img')[0].src=''
+           
+            }
+    </script>
+</body>
+
+</html>

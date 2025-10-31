@@ -16,11 +16,15 @@
         <input type="number" id="soThuHai">
     </div>
      <div>
-        <button onclick="tinhTong()">Tính tổng</button>
+    <button onclick="tinhTong()">Tính tổng</button><br>
+    <button onclick="tinhHieu()">Tính hiệu</button><br>
+     <button onclick="tinhTich()">Tính tích</button><br>
+     <button onclick="TinhThuong()">Tính thương</button>
     </div>
     <div>
         Kết quả: <input type="number" id="ketQua" class="ket-qua">
     </div>
+    
  <script>
  //Tạo prompt nhập tên in ra màn hình
  //let ten = prompt('Nhập họ và tên', "VD: ABC");
@@ -38,10 +42,12 @@
     ////}
  //}
  //coThamSo(soLan);
- function tinhTong(){
+
+ function tinhToan(phepTinh){
     let soThuNhat = parseFloat(document.getElementById('soThuNhat').value);
     let soThuHai = parseFloat(document.getElementById('soThuHai').value);
     let canhBao = "";
+
     if(!soThuNhat){
         canhBao += "Vui lòng nhập số thứ nhất";
     }
@@ -51,10 +57,26 @@
     if(canhBao){
         alert(canhBao);
     }
-    let tong = soThuNhat + soThuHai;
+    //let tong = soThuNhat + soThuHai;
     //document.writeln(tong);
-    document.getElementById('ketQua').value=tong
+   // document.getElementById('ketQua').value=tong
 }
+function tinhToan(phepTinh){
+    if(phepTinh == cong){
+        ketQua = soThuNhat + soThuHai;
+    }
+    else if(phepTinh == tru){
+        ketQua = soThuNhat - soThuHai;
+    }
+    else if(phepTinh == nhan){
+        ketQua = soThuNhat * soThuHai;
+    }
+    else {
+        ketQua = soThuNhat / soThuHai;
+    }
+    document.getElementById('ketQua').value = ketQua;
+}
+
 
     </script>
    
