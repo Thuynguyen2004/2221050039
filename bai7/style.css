@@ -1,151 +1,215 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: rgba(10, 9, 9, 0.616);
-}
-header {
+body{
     background-color: black;
-    height: 15vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    
-}
-
-.container {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    margin:auto;
-}
-
-ul {
-    display:flex;
-    align-items: center;
-    padding-inline-start: 60px;  
-  
-}
-
-li img {
-    height: 60px;  
-    width: auto;
-    padding-left:180px;
-}
-
-nav ul { 
-    list-style: none;
-    margin: 10px;
-    gap: 20px;
-}
-
-nav ul li a {
+    margin: 0px;
     color: white;
-    text-decoration: none;
-    font-size: 20px;
 }
-
-.chucnang{
-    width: 33%;
-    display:flex;
-    align-items: center;
-    gap:15px; 
-    font-size: 20px;
- 
-}
-.timkiem{
-    color: white;  
-   
-}
-.thongbao{
-    color:white;   
-}
-.mua{
-    color:white;
-    background-color:orange;
-    width:18%;
-    height: auto;
-  
-}
-p{
-    color:white;
-
-    margin-inline-end: 0px;
-    
-}
-main{
-    width: 70%;
-    background-color: black;
-    height: auto;
-    margin:auto;
-}
-.more{
-    color:white;
-}
-.cayphim{
-    display:flex;
-    
-    gap:20px;
-}
-.nd{
-    color:white;
-    font-size:20;
-}
-.nd img {
-    height:300px;
-    width:220px;
-}
-.nd p{
-    font-size:22px;
-}
-footer {
+header{
+    background-color:black;
     width: 100%;
-    background-color: black;
-    color: white;
-    padding: 40px 0;
-}
+    height: 70px;
 
-.hd {
-    display: flex;
-    width: 70%;
+}
+.container{
+    width: 75%;
     margin: auto;
-    justify-content: space-between;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    font-size: 18px;
+    align-items: center;
+}
+.nav{
+    display: flex;
+}
+.menu{
+    display: flex;
     gap: 20px;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-   
+    list-style: none;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
 }
-
-.cd {
+.menu a{
+    color: white;
+    text-decoration-line: none;
+}
+#more{
+    background-color: black;
+    font-size: 18px;
+    font-family: Arial;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+.chucnang{
     display: flex;
-    flex-direction: column;
-}
-
-.cd img {
-    height: auto;
-    width: 120px;
-    
-}
-
-.cd h4 {
-   font-size: 16px;
-   font-weight: bold;
-   color:orangered;
-}
-
-.f {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
-
-.f li {
-    font-size: 14px;
-    list-style: none;
+.cuon{
+    width:100%;
+    height: 660.2px;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+}
+main{
+    width: 75%;
+    background-color: black;
+    margin: auto;
+    color: white;
+    font-family: arial;
+    margin-bottom: 10px;
+}
+.qc1 img{
+    border-radius: 0 0 10px 10px;
+}
+.qc1{
+    margin-bottom: 20px;
+}
+.banner{
+    position:relative;
+}
+.banner img{
+    border-radius: 10px 10px 0 0;
+}
+.thongtinphimhientai{
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    left: 5px;
 }
 
-.f li a {
+.thongtinphimhientai li {
+    margin-right: 10px;
+    background-color: rgba(0,0,0,0.5);
     color: white;
-    text-decoration: none;
+    padding: 2px 5px;
+    gap: 15px;
+    border-radius: 5px;
+    list-style: none;
+    font-size: 20px;
+}
+.thongtinphimhientai .btn-red {
+    background: red;
+    color: white;
+    border: none;
+    padding: 2px 5px;
+    border-radius:5px;
+    font-size: 20px;
+}
+.trailer{
+    
+    position: absolute;   
+    bottom: 100px;
+    left:50px;
+}
+.qc2 img{
+    border-radius: 10px;
+}
+.qc2{
+    margin-top: 40px;
+}
+.ds-phim{
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll; 
+    overflow-y: hidden;
+}
+.phim img{
+    border-radius: 10px;
+}
+.daily img{
+    width: 187px;
+    height: 270px;
+}
+.new img{
+    width: 330px;
+    height: 170px;
+}
+.sk-thethao img{
+    width: 200px;
+    height: 130px;
+}
+.phimbo-hot img{
+    width: 187px;
+    height: 270px;
+}
+.anime-hot img{
+    width: 187px;
+    height: 270px;
+}
+.sieunhan-nb img{
+    width: 187px;
+    height: 270px;
+}
+.phimviet img{
+    width: 187px;
+    height: 270px;
+}
+.danhmuc .phim{
+    border: 1px solid rgb(192, 192, 220);
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    align-content: center;
+    background-color: rgb(171, 171, 213);
+}
+.thieunhi img{
+    width: 187px;
+    height: 270px;
+}
+.thethao img{
+    width: 200px;
+    height: 120px;
+}
+.congchieu .phim{
+    position:relative;
+}
+.phim .btn-red {
+    position: absolute;
+    bottom: 20px;   
+    right: 20px;   
+    background: red;
+    color: white;
+    border: none;
+    padding: 15px 27px;
+    border-radius:10px;
+    font-size: 20px;
+}
+footer{
+    margin-top: 50px;
+    border-top: 1px solid gray;
+    width: 75%;
+    margin: auto;
+}
+.footer-menu{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 1px solid gray;
+}
+.banquyen img{
+    width: 191px;
+    height: 66px;
+}
+.banquyen{
+    margin-right: 100px;
+}
+.fptplay-info{
+    display: flex;
+    gap: 40px;
+
+}
+.fptplay-info ul{
+    list-style: none;
+    padding: 0px;
+}
+.fptplay-info a{
+    color: white;
+    text-decoration-line: none;
+}
+.chantrang{
+    margin-bottom: 20px;
+    font-size: small;
 }

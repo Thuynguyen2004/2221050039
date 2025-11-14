@@ -3,227 +3,478 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel ="stylesheet" href="style.css">
-     <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>FPT Play</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class ="container">
-
+        <div class="container">
             <nav>
-                <ul>
-                    <li><img src="../fpt/img/logowebsite4x_1748221195181.png" alt="FPT Play"></li>
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Truyền hình</a></li>
-                    <li><a href="#">Phim bộ</a></li>
-                    <li><a href="#">V.League</a></li>
-                    <li><a href="#">Thiếu nhi</a></li>
+                <ul class="menu" style="font-family: Arial;">
+                    <li><img src="../fpt/img/logowebsite4x_1748221195181.png" width="100px" alt=""></li>
+                    <li><a href="#"><b>Trang chủ</b></a></li>
+                    <li><a href="#"><b>Truyền hình</b></a></li>
+                    <li><a href="#"><b>Phim bộ</b></a></li>
+                    <li><a href="#"><b>V.League</b></a></li>
+                    <li><a href="#"><b>Thiếu nhi</b></a></li>
+                    <li><a href="#"><b>
+                        <select name="xemthem" id="more">
+                            <option value="1">Xem thêm</option>
+                            <option value="2">Trực tiếp</option>
+                            <option value="3">Anime</option>
+                            <option value="4">Phim bộ</option>
+                            <option value="5">Phim lẻ</option>
+                            <option value="6">Thể thao</option>
+                            <option value="7">Âm nhạc</option>
+                        </select>
+                        </b></a>
+                    </li>
                 </ul>
+            </nav>
+            <div class="chucnang">
+                <p><i class="fa fa-search"></i></p>
+                <p><i class="fa fa-bell"></i></p>
+                <p style="border: 1px solid red; border-radius: 5px; background-color: red; padding: 5px;"><i class="fa fa-credit-card">    Mua gói</i></p>
+                <p>Đăng nhập</p>
             </div>
-        <div class=" chucnang">
-            <div class ="timkiem"><i class="fa fa-search" aria-hidden="true" style="font-size:24px"></i></div>
-            <div class ="thongbao"><i class="fa fa-bell-o" aria-hidden="true" style="font-size:24px"></i></div>
-            <div class ="mua"><i class="fa fa-credit-card" aria-hidden="true"style="font-size:24px"></i>Mua gói</div>
-            <p>Đăng nhập</p>
-
         </div>
-
-
-
     </header>
+    <div class="cuon">
     <main>
-        <img src="../fpt/img/qc.jpg" width="100%">
-        <img src="../fpt/img/640x396-muado.jpg" width="100%">
-
-        <div class="more">
-            <a hred="#"><h1>Cày phim hay mỗi ngày</h1></a>
-        </div>
-        <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 092203.png" >
-                <p>Hồ Sơ X (Phần 2)</p>
+        <div class="banner-qc">
+            <div class="qc1">
+                <img src="../fpt/img/09_68bfea5810013f0001205210.jpg" width="100%">
             </div>
-       
-           
-            <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 091431.png" >
-                 <p>Pháp Sư Vô Tâm</p>
+            <div class="banner" id="banner-img">
+                <img src="../fpt/img/mua-do2-1122.jpeg" width="100%">
+                <ul class="thongtinphimhientai">
+                    <li class="nam">2025</li>
+                    <li class="tuoi">16</li>
+                    <li class="thoiluong">2</li>
+                    <li class="quocgia">Việt Nam</li>
+                    <button class="btn-red" onclick="xemTrailer()">Trailer</i></button>
+                </ul>
+                <div class="trailer"></div>
             </div>
-
-            <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 092128.png" >
-                <p>Nữ Vệ Sĩ</p>
-            </div> 
-
-            
-            <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 091457.png">
-                 <p>Hồ Sơ X (Phần 2)</p>
-            </div>
-
-           
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 091513.png">
-                 <p>Gia Đình Là Số 1 (Phần 1)</p>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-         <div class="more">
-            <a hred="#"><h1>MỚI RA MẮT</h1></a>
-        </div>
-        <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 092203.png" >
-                <p>Hồ Sơ X (Phần 2)</p>
-            </div>
-           
-            <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 091431.png" >
-                 <p>Pháp Sư Vô Tâm</p>
-
-            </div>
-            <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 092128.png" >
-                <p>Nữ Vệ Sĩ</p> 
-
-            </div>
-            <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 091457.png">
-                 <p>Hồ Sơ X (Phần 2)</p>
-
-            </div>
-            <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 091513.png">
-                 <p>Gia Đình Là Số 1 (Phần 1)</p>
-            </div>
-            </div>
+            <div class="qc2">
+                <img src="../fpt/img/qc.jpg" width="100%">
             </div>
         </div>
+        <div class="daily">
+            <h2>Cày phim hay mỗi ngày</h2>
+            <div class="ds-phim">
+                <div class="phim">
+                    <img onclick="chonPhim(3)" src="../fpt/img/phim/beautyandthebeaets.jpg"><br>
+                    <div>Beauty and the Beaets</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(4)" src="../fpt/img/phim/bongdungtrungso.jpg"><br>
+                    <div>Bỗng dưng trúng số</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(12)" src="../fpt/img/phim/matbiec.jpg"><br>
+                    <div>Mắt biếc</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(2)" src="../fpt/img/phim/conan.jpg"><br>
+                    <div>Thám tử lừng danh</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(11)" src="../fpt/img/phim/cam.jpg"><br>
+                    <div>Cám</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(3)" src="../fpt/img/phim/beautyandthebeaets.jpg"><br>
+                    <div>Beauty and the Beaets</div>
+                </div>
             </div>
         </div>
+        <div class="new">
+            <h2>Mới ra mắt</h2>
+            <div class="ds-phim">
+                <div class="phim">
+                    <img onclick="chonPhim(1)" src="../fpt/img/640x396-muado.jpg"><br>
+                    <div>Mưa đỏ</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(14)"  src="../fpt/img/phim/keanhon.jpg"><br>
+                    <div>Kẻ ăn hồn</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(13)"  src="../fpt/img/phim/tetolangdianguc.jpg"><br>
+                    <div>Tết ở làng địa ngục</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(1)"  src="../fpt/img/640x396-muado.jpg"><br>
+                    <div>Mưa đỏ</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(1)"  src="../fpt/img/640x396-muado.jpg"><br>
+                    <div>Mưa đỏ</div>
+                </div>
             </div>
-           
         </div>
-        <div class="more">
-            <a hred="#"><h1>SỰ KIỆN THỂ THAO</h1></a>
-        </div>
-        <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 111525.png" >
-                <p>Hồ Sơ X (Phần 2)</p>
+        <!--<div class="sk-thethao">
+            <h2>Sự kiện thể thao</h2>
+            <div class="ds-phim">
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 181752.png"><br>
+                    <div>Long An - Quy Nhơn United</div>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 181802.png"><br>
+                    <div>Golf - European Masters 2025 vòng 4: Phát lại</div>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 181815.png"><br>
+                    <div>Noche UFC: Lopes vs Silva</div>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 181752.png"><br>
+                    <div>Long An - Quy Nhơn United</div>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 181802.png"><br>
+                    <div>Golf - European Masters 2025 vòng 4: Phát lại</div>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 181815.png"><br>
+                    <div>Noche UFC: Lopes vs Silva</div>
+                </div>
             </div>
-       
-           
-            <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 111525.png" >
-                 <p>Pháp Sư Vô Tâm</p>
+        </div>-->
+        <div class="phimbo-hot">
+            <h2>Phim bộ hot</h2>
+            <div class="ds-phim">
+                <div class="phim">
+                    <img onclick="chonPhim(17)" src="../fpt/img/phim/minion.jpg"><br>
+                    <div>Kẻ trộm mặt trăng: Minions</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(17)" src="../fpt/img/phim/minion.jpg"><br>
+                    <div>Kẻ trộm mặt trăng: Minions</div>>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(17)" src="../fpt/img/phim/minion.jpg"><br>
+                    <div>Kẻ trộm mặt trăng: Minions</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(17)" src="../fpt/img/phim/minion.jpg"><br>
+                    <div>Kẻ trộm mặt trăng: Minions</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(4)"  src="../fpt/img/phim/bongdungtrungso.jpg"><br>
+                    <div>Bỗng dưng trúng số</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(4)"  src="../fpt/img/phim/bongdungtrungso.jpg"><br>
+                    <div>Bỗng dưng trúng số</div>
+                </div>
             </div>
-
-            <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 111525.png" >
-                <p>Nữ Vệ Sĩ</p>
-            </div> 
-
-            
-            <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 111525.png">
-                 <p>Hồ Sơ X (Phần 2)</p>
+        </div>
+        <div class="anime-hot">
+            <h2>Anime hot</h2>
+            <div class="ds-phim">
+                <div class="phim">
+                    <img onclick="chonPhim(2)" src="../fpt/img/phim/conan.jpg"><br>
+                    <div>Thám tử lừng danh Conan</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(5)"  src="../fpt/img/phim/kungfupanda.jpg"><br>
+                    <div>Kungfu Panda</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(6)"  src="../fpt/img/phim/toys.jpg"><br>
+                    <div>Toys Stories 4</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(7)"  src="../fpt/img/phim/nemo.jpg"><br>
+                    <div>Findet Nemo</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(2)"  src="../fpt/img/phim/conan.jpg"><br>
+                    <div>Thám tử lừng danh Conan</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(2)"  src="../fpt/img/phim/conan.jpg"><br>
+                    <div>Thám tử lừng danh Conan</div>
+                </div>
             </div>
-
-           
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 111525.png">
-                 <p>Gia Đình Là Số 1 (Phần 1)</p>
         </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="more">
-            <a hred="#"><h1>PHIM BỘ HOT</h1></a>
-        </div>
-        <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 092203.png" >
-                <p>Hồ Sơ X (Phần 2)</p>
+        <div class="sieunhan-nb">
+            <h2>Top phim Siêu nhân Nhật Bản</h2>
+            <div class="ds-phim">
+                <div class="phim">
+                    <img onclick="chonPhim(8)"  src="../fpt/img/ultra.webp"><br>
+                    <div>Ultraman Arc</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(9)" src="../fpt/img/hiepsimatna.jpg"><br>
+                    <div>Hiệp Sĩ Mặt Nạ: Gia Đình Siêu Phàm</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(10)"  src="../fpt/img/ultra.webp"><br>
+                    <div>Ultraman Arc</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(8)"  src="../fpt/img/ultra.webp"><br>
+                    <div>Ultraman Arc</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(20)" src="../fpt/img/hienngu.jpg"><br>
+                    <div>Hiến Ngư</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(20)" src="../fpt/img/hienngu.jpg"><br>
+                    <div>Hiến Ngư</div>
+                </div>
             </div>
-       
-           
-            <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 091431.png" >
-                 <p>Pháp Sư Vô Tâm</p>
+        </div>
+        <div class="phimviet">
+            <h2>Phim Việt không thể bỏ lỡ</h2>
+            <div class="ds-phim">
+                <div class="phim">
+                    <img onclick="chonPhim(11)" src="../fpt/img/phim/cam.jpg"><br>
+                    <div>Cám</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(12)" src="../fpt/img/phim/matbiec.jpg"><br>
+                    <div>Mắt biếc</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(13)" src="../fpt/img/phim/tetolangdianguc.jpg"><br>
+                    <div>Tết ở làng địa ngục</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(14)" src="../fpt/img/phim/keanhon.jpg"><br>
+                    <div>Kẻ ăn hồn</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(15)" src="../fpt/img/phim/mai.jpg"><br>
+                    <div>Mai</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(14)" src="../fpt/img/phim/keanhon.jpg"><br>
+                    <div>Kẻ ăn hồn</div>
+                </div>
             </div>
-
-            <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 092128.png" >
-                <p>Nữ Vệ Sĩ</p>
-            </div> 
-
-            
-            <div class="cayphim">
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 091457.png">
-                 <p>Hồ Sơ X (Phần 2)</p>
+        </div>
+        <div class="danhmuc">
+            <h2>Danh mục</h2>
+            <div class="ds-phim">
+                <div class="phim">
+                    <p align="center"><i class="fa fa-television"></i><br></p> 
+                    <div align="center">Truyền hình</div>
+                </div>
+                <div class="phim">
+                    <p align="center"><i  class="fa fa-calendar"></i><br></p>
+                    <div align="center">Trực tiếp</div>
+                </div>
+                <div class="phim">
+                    <p align="center"><i class="fa fa-film"></i><br></p>
+                    <div align="center">Phim bộ</div>
+                </div>
+                <div class="phim">
+                    <p align="center" ><i class="material-icons">movie</i><br></p>
+                    <div align="center">Phim lẻ</div>
+                </div>
+                <div class="phim">
+                    <p align="center"><i class="fa fa-paw"></i><br></p>
+                    <div align="center">Anime</div>
+                </div>
+                <div class="phim">
+                    <p align="center"><i class="fa fa-soccer-ball-o"></i><br></p>
+                    <div align="center">Thể thao</div>
+                </div>  
             </div>
-
-           
-            <div class="nd"><img src="../fpt/img/Screenshot 2025-09-15 091513.png">
-                 <p>Gia Đình Là Số 1 (Phần 1)</p>
         </div>
+        <div class="thieunhi">
+            <h2>Phim hay, bé xem mê say</h2>
+            <div class="ds-phim">
+                <div class="phim">
+                    <img onclick="chonPhim(6)" src="../fpt/img/phim/toys.jpg"><br>
+                    <div>Toys stories 4</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(16)" src="../fpt/img/phim/walle.jpg"><br>
+                    <div>Walle</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(17)" src="../fpt/img/phim/minion.jpg"><br>
+                    <div>Kẻ trộm mặt trăng: Minion</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(6)" src="../fpt/img/phim/toys.jpg"><br>
+                    <div>Toys stories 4</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(16)" src="../fpt/img/phim/walle.jpg"><br>
+                    <div>Walle</div>
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(17)" src="../fpt/img/phim/minion.jpg"><br>
+                    <div>Kẻ trộm mặt trăng: Minion</div>
+                </div>
+            </div>
         </div>
+        <!--<div class="giaitritonghop">
+            <h2>Giải trí tổng hợp mơi nhất</h2>
+            <div class="ds-phim">
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 223606.png"><br>
+                    <div>The Khang show 2025 </div>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 223615.png"><br>
+                    <div>Boys Planet II</div>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 223626.png"><br>
+                    <div>Chiến sĩ quả cảm</div>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 223606.png"><br>
+                    <div>The Khang show 2025 </div>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 223615.png"><br>
+                    <div>Boys Planet II</div>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 223626.png"><br>
+                    <div>Chiến sĩ quả cảm</div>
+                </div>
+            </div>
         </div>
-        </div>
-        </div>
-        
-
+        <div class="thethao">
+            <h2>Thể thao</h2>
+            <div class="ds-phim">
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 224340.png"><br>
+                    <div>Bournemouth - Brighton & Hove Albion </div>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 224340.png"><br>
+                    <div>Bournemouth - Brighton & Hove Albion </div>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 224340.png"><br>
+                    <div>Bournemouth - Brighton & Hove Albion </div>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 224340.png"><br>
+                    <div>Bournemouth - Brighton & Hove Albion </div>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 224340.png"><br>
+                    <div>Bournemouth - Brighton & Hove Albion </div>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 224340.png"><br>
+                    <div>Bournemouth - Brighton & Hove Albion </div>
+                </div>
+            </div>
+        </div> 
+        <div class="congchieu">
+            <h2>Thể thao</h2>
+            <div class="ds-phim">
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 225315.png">
+                    <button class="btn-red"><i class="fa fa-bell"> Đặt lịch</i></button>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 225412.png">
+                    <button class="btn-red"><i class="fa fa-bell"> Đặt lịch</i></button>
+                </div>
+                <div class="phim">
+                    <img src="../pic/Screenshot 2025-09-13 225429.png">
+                    <button class="btn-red"><i class="fa fa-bell"> Đặt lịch</i></button>
+                </div>
+            </div>
+        </div>-->
+        <!--<div class="top10">
+            <h2>Top 10 bộ phim xu hướng</h2>
+            <div class="ds-phim">
+                <div class="phim">
+                    <img onclick="chonPhim(18)" src="../pic/Screenshot 2025-09-13 231310.png">
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(19)" src="../pic/Screenshot 2025-09-13 231322.png">
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(20)" src="../pic/Screenshot 2025-09-13 231330.png">
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(21)" src="../pic/Screenshot 2025-09-13 231344.png">
+                </div>
+                <div class="phim">
+                    <img onclick="chonPhim(22)" src="../pic/Screenshot 2025-09-13 231357.png">
+                </div>
+            </div>
+        </div>-->
     </main>
     <footer>
-        <div class="hd">
-            <div class="cd">
-                <img src="../fpt/img/logowebsite4x_1748221195181.png" alt=""><br>
-                <img src="../fpt/img/logowebsite4x_1748221195181.png" alt=""><br>
-                <img src="../fpt/img/logowebsite4x_1748221195181.png" alt="">
+        <div class="footer-menu">
+            <div class="banquyen">
+                <img src="../fpt/img/logowebsite4x_1748221195181.png"><br>
+                <img src="../fpt/img/logowebsite4x_1748221195181.png"><br>
+                <img src="../fpt/img/logowebsite4x_1748221195181.png">
             </div>
-            <div class="cd">
-      <h4>Về FPT Play</h4>
-      <ul class ="f">
-        <li>Giới thiệu</li>
-        <li>Các gói dịch vụ</li>
-        <li>Liên hệ</li>
-        <li>Trung tâm hỗ trợ</li>
-        <li>Thông tin</li>
-      </ul>
+            <div class="fptplay-info">
+                <div>
+                    Về FPT Play
+                    <ul>
+                        <li><b><a href="#">Giới thiệu</a></b></li>
+                        <li><b><a href="#">Các gói dịch vụ</a></b></li>
+                        <li><b><a href="#">Liên hệ</a></b></li>
+                        <li><b><a href="#">Trung tâm hỗ trợ</a></b></li>
+                        <li><b><a href="#">Thông tin</a></b></li>
+                    </ul>
+                </div>
+                <div>
+                    Dịch vụ
+                    <ul>
+                        <li><b><a href="#">Gói Data</a></b></li>
+                        <li><b><a href="#">Quảng cáo</a></b></li>
+                        <li><b><a href="#">Mua gói</a></b></li>
+                        <li><b><a href="#">Bảo hành</a></b></li>
+                    </ul>
+                </div>
+                <div>
+                    Quy định
+                    <ul>
+                        <li><b><a href="#">Điều khoản sử dụng</a></b></li>
+                        <li><b><a href="#">Chính sách thanh toán</a></b></li>
+                        <li><b><a href="#">Chính sách bảo mật thông tin dữ liệu</a></b></li>
+                        <li><b><a href="#">Cam kết FPT Telecom</a></b></li>
+                    </ul>
+                </div>
+                <div class="lienhe">
+                        <p><b><i class="fa fa-phone"> 19006600</i></b></p>
+                        <p><b><i class="fa fa-envelope"> hotrofptplay@fpt.com</i></b></p>
+                        <p>Theo dõi chúng tôi trên<br>
+                           <a href="#"><i class="fa fa-facebook-square" style="font-size: 15px;"></i></a>
+                           <a href="#"><i class="fa fa-youtube-play" style="font-size: 15px;"></i></a> 
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="chantrang">
+            <div style="margin-bottom: 20px;">
+                Công ty Cổ phần Viễn Thông FPT - Người đại diện: Ông Hoàng Việt Anh. Trụ sở: Tầng 2, Tòa nhà FPT Cầu Giấy, Số 17 Phố Duy Tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, TP.Hà Nội<br>
+                Địa chỉ liên lạc: Tầng 9, Block A, tòa nhà FPT Cầu Giấy, số 10 Phạm Văn Bạch, quận Cầu Giấy, TP. Hà Nội<br>
+                Số điện thoại liên hệ: 024 7300 2222. Thư điện tử: hotrokhachhang@fpt.com hoặc hotrofptplay@fpt.com
+            </div>
+            <div>
+                Giấy chứng nhận đăng ký doanh nghiệp số 0101778163 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp lần đầu ngày 28/7/2005, cấp đăng ký thay đổi lần thứ 32 vào ngày 21/12/2023.<br>
+                Giấy phép cung cấp dịch vụ phát thanh, truyền hình trả tiền số 377/GP-BTTTT cấp sửa đổi bổ sung lần 1 ngày 10/10/2023.
+            </div>
+        </div>
+    </footer>
     </div>
 
-    <div class="cd">
-      <h4>Dịch vụ</h4>
-      <ul class ="f">
-        <li>Gói DATA</li>
-        <li>Quảng cáo</li>
-        <li>Mua gói</li>
-        <li>Bảo hành</li>
-      </ul>
-    </div>
-
-    <div class="cd">
-      <h4>Quy định</h4>
-      <ul class ="f">
-        <li>Điều khoản sử dụng</li>
-        <li>Chính sách thanh toán</li>
-        <li>Chính sách bảo mật thông tin dữ liệu</li>
-        <li>Cam kết của FPT Telecom</li>
-      </ul>
-    </div>
-
-    
-    <div class="cd">
-      <ul class ="f">
-        <li> 19006600</li>
-        <li>hotrofptplay@fpt.com</li>
-        <li>Theo dõi chúng tôi trên:</li>
-        <li>
-          <a href="#">Facebook</a> | 
-          <a href="#">YouTube</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</footer> 
 </body>
+<script src="script.js"></script>
 </html>
