@@ -296,5 +296,96 @@ function xemTrailer(){
         xem = true;
     }
 }
+//Lấy phim thuộc quốc gia Việt Nam
+//SELECT phim.ten_phim, quoc_gia.ten_quoc_gia
+//FROM phim 
+//JOIN quoc_gia ON phim.quoc_gia_id = quoc_gia.id
+//WHERE quoc_gia.ten_quoc_gia = 'Việt Nam';
+
+//Lấy phim phát hành từ năm 2020 trở lên
+//SELECT ten_phim, nam_phat_hanh
+//FROM phim
+//WHERE nam_phat_hanh >= 2020;
+
+//Lấy phim có số tập nhiều hơn 15
+//SELECT ten_phim, so_tap
+//FROM phim
+//WHERE so_tap > 15;
+
+//Lấy thông tin người dùng và vai trò tương ứng
+//SELECT nguoi_dung.ho_ten, vai_tro.ten_vai_tro
+//FROM nguoi_dung
+//JOIN vai_tro ON nguoi_dung.vai_tro_id = vai_tro.id;
+
+//Đếm số lượng phim trong bảng phim
+//SELECT COUNT(*) AS tong_so_phim
+//FROM phim;
+
+//Đếm số lượng phim theo từng quốc gia
+//SELECT quoc_gia.ten_quoc_gia, COUNT(phim.id) AS so_phim
+//FROM phim
+//JOIN quoc_gia ON phim.quoc_gia_id = quoc_gia.id
+//GROUP BY quoc_gia.ten_quoc_gia;
+
+//Lấy phim có ID = 5
+//SELECT *
+//FROM phim
+//WHERE id = 5;
+
+//Lấy phim có quốc gia là Hàn Quốc và năm phát hành 2022
+//SELECT phim.ten_phim
+//FROM phim
+//JOIN quoc_gia ON phim.quoc_gia_id = quoc_gia.id
+//WHERE quoc_gia.ten_quoc_gia = 'Hàn Quốc'
+//  AND phim.nam_phat_hanh = 2022;
+
+//Lấy danh sách tập phim của phim có id = 1
+//SELECT tap_phim.so_tap, tap_phim.tieu_de
+//FROM tap_phim
+//WHERE tap_phim.phim_id = 1;
+
+//Lấy thể loại của phim ID = 5
+//SELECT the_loai.ten_the_loai
+// FROM phim_the_loai
+//JOIN the_loai ON phim_the_loai.the_loai_id = the_loai.id
+//WHERE phim_the_loai.phim_id = 5;
+
+ //Tìm người dùng có email chứa @gmail.com
+//SELECT ho_ten, email
+//FROM nguoi_dung
+//WHERE email LIKE '%@gmail.com';
+
+ //Lấy danh sách tài khoản có vai trò là “Admin”
+//SELECT nguoi_dung.ho_ten, nguoi_dung.ten_dang_nhap
+//FROM nguoi_dung
+//JOIN vai_tro ON nguoi_dung.vai_tro_id = vai_tro.id
+//WHERE vai_tro.ten_vai_tro = 'Admin';
+
+ //Lấy phim và tên đạo diễn (đạo diễn nằm trong bảng nguoi_dung)
+//SELECT phim.ten_phim, nguoi_dung.ho_ten AS ten_dao_dien
+//FROM phim
+//JOIN nguoi_dung ON phim.dao_dien_id = nguoi_dung.id;
+
+//Lấy danh sách diễn viên của phim ID = 3
+//SELECT nguoi_dung.ho_ten
+//FROM phim_dien_vien//
+//JOIN nguoi_dung ON phim_dien_vien.dien_vien_id = nguoi_dung.id 
+//WHERE phim_dien_vien.phim_id = 3;
+
+//Lấy phim có độ dài trailer không rỗng
+//SELECT ten_phim, trailer
+//FROM phim
+//WHERE trailer IS NOT NULL AND trailer <> '';
+
+ //Sắp xếp phim theo năm phát hành (mới nhất → cũ nhất)
+//SELECT ten_phim, nam_phat_hanh
+//FROM phim
+//ORDER BY nam_phat_hanh DESC;
+
+//Top 5 phim có số tập nhiều nhất
+//SELECT ten_phim, so_tap
+//FROM phim
+//ORDER BY so_tap DESC
+//LIMIT 5; -->
 
 
