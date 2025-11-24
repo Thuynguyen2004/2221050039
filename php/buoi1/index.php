@@ -102,6 +102,55 @@
     #xóa 
     unset($mang[3]);
     print_r($mang);
+
+    # sap xep mang
+    $mang = ["C","B","D","A"];
+    print_r($mang);
+    echo "<br>";
+
+    #sx tang
+    sort($mang);
+    print_r($mang);
+
+    #sx giảm
+    echo "<br>";
+    rsort($mang);
+    print_r($mang);
+
+    //11. Kiểm tra xem biên có tồn tại hay ko
+    $bienA = "hello";
+    isset($bienA); //true
+    isset($bienB); //false
+
+    if(isset($bienB)) {
+        echo "Bien nay co ton tai";
+    }
+    else{
+        echo "Bien nay k ton tai";
+    }
+     //check empty
+     $check = "";
+     if(empty($check)){
+        echo "empty";
+     }
+     else{
+        echo "no empty";
+     }
+
+     //12. Hàm
+     // ko tham số
+     function xinChao(){
+        return "Hello";
+     }
+     //echo xinChao();
+
+     #có tham số
+     function xinChao2($ten){
+        return "Hello" . $ten;
+     }
+     echo xinChao2("Thuy");
+
+
     ?>
 </body>
 </html>
